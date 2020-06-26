@@ -27,6 +27,28 @@
 
 void sort (int *a, int *b, int *c)
 {
+  int i;
+
+  if(*a>*b)
+  {
+    i = *b;
+    *b = *a;
+    *a = i;
+  }
+
+  if(*a>*c)
+  {
+    i = *c;
+    *c = *a;
+    *a = i;
+  }
+
+  if(*b>*c)
+  {
+    i = *c;
+    *c = *b;
+    *b = i;
+  }
 }
 
 /* Do not edit this function. */
