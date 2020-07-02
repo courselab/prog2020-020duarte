@@ -29,8 +29,21 @@
 
 int decimal (char *b)
 {
-  
-  return 0;
+  int m = strlen (b);
+  int valor = 0;
+  int i;
+  int potencia2 = 1;
+
+  for(i = m-1; i>=0; i--)
+  {
+    if(b[i] == '1')
+    {
+      valor += potencia2;
+    }
+      potencia2 = potencia2 * 2;
+  }
+
+  return valor;
 }
 
 #define USAGE "m004 <string>\n"
