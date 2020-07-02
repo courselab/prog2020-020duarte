@@ -18,7 +18,7 @@
       Please, edit function determinant();
       do no not change function main().
 
-*/BTBR 
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
