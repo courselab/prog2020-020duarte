@@ -28,6 +28,23 @@
 
 void crossprod (int a[3], int b[3], int c[3])
 {
+  /*  A determinante dessa função é: 
+
+              |i j k|
+              |a b c| 
+              |x y z|
+
+  As coordenadas dos meus vetores são:
+          U = (x, y, z) e V = (a, b, c)
+
+  */
+  
+    c[0] = a[1]*b[2] - a[2]*b[1]; /* Componente "i"*/
+
+    c[1] = a[2]*b[0] - a[0]*b[2]; /* Componente "j"*/
+
+    c[2] = a[0]*b[1] - a[1]*b[0]; /* Componente "k"*/
+
 }
 
 
