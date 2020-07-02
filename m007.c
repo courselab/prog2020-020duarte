@@ -21,14 +21,47 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define MAX 256
 
 /* Count the number of letters in string s.*/
 
-int lettercount (char *s)
+  int verify (char s)                   /* Achei mais facil criar uma função que verifica todas as                                                       letras do alfabeto entre 'a' e 'z'*/
+  {                                                                     
+    int c;
+
+    c = 0;
+
+    if(s>= 'a' && s<= 'z')                
+    {
+      c++;
+    }
+    
+    if(s>= 'A' && s<= 'Z')
+    {
+      c++;
+    }
+
+    return c;
+
+  }
+
+
+int lettercount (char *s)                           /* Função que conta quantas letras tem a palavra*/ 
 {
-  return 0;
+  int i;
+  int contador;
+
+  contador = 0;
+
+  for(i=0; i<=strlen(s); i++)
+  {
+    contador = contador + verify (s[i]);
+  }
+
+  return contador;
+  
 }
 
 
