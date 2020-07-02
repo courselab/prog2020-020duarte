@@ -27,7 +27,7 @@
 
 /* Count the number of letters in string s.*/
 
-  int verify (char s)                   /* Achei mais facil criar uma função que verifica todas as                                                       letras do alfabeto entre 'a' e 'z'*/
+  int verify (char s)     /* Achei mais facil criar uma função que verifica todas as letras do alfabeto*/
   {                                                                     
     int c;
 
