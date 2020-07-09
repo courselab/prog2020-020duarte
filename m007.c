@@ -55,7 +55,7 @@ int lettercount (char *s)                           /* Função que conta quanta
 
   contador = 0;
 
-  for(i=0; i<=strlen(s); i++)
+  for(i=0; i<strlen(s); i++)
   {
     contador = contador + verify (s[i]);
   }
