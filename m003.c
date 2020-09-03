@@ -23,6 +23,26 @@
 
 int is_prime (int a)
 {
+  int i;
+  int n;
+  n = 0;
+
+  for(i=1; i<a; i++)
+  {
+    if((a%i) == 0)
+    {
+      n = n + 1;
+    }
+  }
+
+  if(n == 1)
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
   return 0;
 }
 
